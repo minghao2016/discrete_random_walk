@@ -9,7 +9,7 @@ x = range(0, T)
 
 def RandomWalk():
 	S = np.zeros(T, np.dtype(int)) # create empty vector for values
-	r = bernoulli.rvs(0.5, loc=0, size=T) # generate Bernouli Discrete Random Variables
+	r = bernoulli.rvs(0.5, loc=0, size=T) # generate Bernoulli Discrete Random Variables
 	for i in x:
 		if r[i] == 1:
 			S[i] = S[i-1] + 1
